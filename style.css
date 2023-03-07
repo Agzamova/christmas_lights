@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100%;
+    position: relative;
+    overflow:hidden;
+    font-size: 16px;
+    background-color: #1d1e22;
+}
+  
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 900px;
+    max-height: 107px;
+}
+
+.bubbles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(./img/branch.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bubble {
+    width: 60px;
+    height: 102px;
+    transform-origin: 50% 0;
+    transition: all .1s ease-in-out;
+}
+
+.ball__n1 {
+    background: url(./img/ball_n1.png) no-repeat;
+}
+
+.ball__n2 {
+    background: url(./img/ball_n2.png) no-repeat;
+}
+
+.ball__n3 {
+    background: url(./img/ball_n3.png) no-repeat;
+}
+
+.ball__n4 {
+    background: url(./img/ball_n4.png) no-repeat;
+}
+
+.ball__n5 {
+    background: url(./img/ball_n5.png) no-repeat;
+}
+
+.ball__n6 {
+    background: url(./img/ball_n6.png) no-repeat;
+}
+
+.ball__n7 {
+    background: url(./img/ball_n7.png) no-repeat;
+}
+
+.ball__n8 {
+    background: url(./img/ball_n8.png) no-repeat;
+}
+
+.ball__n9 {
+    background: url(./img/ball_n9.png) no-repeat;
+}
+
+.ball__n10 {
+    background: url(./img/ball_n1.png) no-repeat;
+}
+
+.rotate {
+    transform: rotate(9deg);
+}
+
+.rotate1 {
+    transform: rotate(-9deg);
+}
+
+.rotate2 {
+    transform: rotate(9deg);
+}
+
+.rotate3 {
+    transform: rotate(0deg);
+}
+
+.snow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.snow__btn {
+    margin-top: 50px;
+    padding: 20px;
+    min-width: 200px;
+    font-weight: 800;
+    font-size: 20px;
+    background: #ff719f;
+    border-radius: 25px;
+    box-shadow: inset 0px 4px 10px rgba(245, 238, 238, 0.8);
+    color: #fff;
+    transition: color .1s ease-in-out
+}
+
+.snow__btn:hover {
+    color: #666262;
+}
+
+.snowflake {
+    position: absolute;
+    background: #fff;
+    border-radius: 100%;
+    z-index: 10;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 110vh, 0);
+    }
+}
